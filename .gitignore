@@ -16,3 +16,6 @@ ENV/
 # CSV / TSV data dumps (if large or generated)
 *.csv
 *.tsv
+
+# MacOS system files
+.DS_Store
