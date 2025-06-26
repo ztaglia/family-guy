@@ -12,4 +12,8 @@ df['Written by'] = df['Written by'].str.split('&')
 df = df.explode('Written by')
 df['Written by'] = df['Written by'].str.strip()
 
+df[['No. in season', 'No. overall', 'Season']] = df[['No. in season', 'No. overall', 'Season']].fillna(-1).astype(int)
+
+
+
 df.to_csv('family_guy_cleaned.csv', index=False)
